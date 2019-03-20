@@ -35,8 +35,6 @@ class App extends Component {
 			<Laureate key={laureate.year} data={laureate} />
       ));
 
-
-
 		return (
 			<>
 				<Header year={this.state.laureates} change={this.handleChange} />
