@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Lora|Raleway');
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+	/* you shall not scroll ;p */
+	overflow: hidden;
+}
+
+input,
+textarea,
+select,
+a,
+button {
+	outline: none;
+}
+
+::selection {
+	background: rgb(206, 161, 82);
+	color: white;
+}
