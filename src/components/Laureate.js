@@ -86,6 +86,7 @@ const Laureate = (props) => {
 				href={`https://www.nobelprize.org/prizes/economic-sciences/${props.data
 					.year}/${winner.surname}/facts`}
 				target="_blank"
+				rel="noopener noreferrer"
 			>
 				{winner.surname.toUpperCase()}, {winner.firstname} &#xab;
 			</a>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 import Header from './Header';
 import Laureate from './Laureate';
 
@@ -10,9 +11,9 @@ class App extends Component {
 	};
 
 	componentDidMount() {
-
-		const url = `http://api.nobelprize.org/v1/prize.json?category=economics`;
-		fetch(url).then((response) => response.json()).then((data) => {
+		// const url = `http://api.nobelprize.org/v1/prize.json?category=economics`;
+		const url = '/economics.json';
+		fetch(process.env.PUBLIC_URL + url).then((response) => response.json()).then((data) => {
 			this.setState({
 				laureates: data.prizes,
 				isLoaded: true
@@ -26,20 +27,19 @@ class App extends Component {
 		});
 
 		const targetId = `#Y${e.target.value}`;
-      document.querySelector(targetId).scrollIntoView({ behavior: 'smooth', block: 'start' });
-
+		document.querySelector(targetId).scrollIntoView({ behavior: 'smooth', block: 'start' });
 	};
 
 	render() {
 		const laureates = this.state.laureates.map((laureate) => (
 			<Laureate key={laureate.year} data={laureate} />
-      ));
+		));
 
 		return (
-			<>
+			<Router basename={process.env.PUBLIC_URL}>
 				<Header year={this.state.laureates} change={this.handleChange} />
-				<div>{this.state.isLoaded ? laureates : 'Loading...'}</div>
-			</>
+				{this.state.isLoaded ? laureates : <h1 style={{ textAlign: 'center' }}>Loading...</h1>}
+			</Router>
 		);
 	}
 }
