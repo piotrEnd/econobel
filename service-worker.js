@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/piotrEnd/econobel/precache-manifest.9dd2ad8963e051feb20e59632c04c1c1.js"
+  "/econobel/precache-manifest.c7674e8de7196bfd34b024e786c6d624.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/piotrEnd/econobel/index.html", {
+workbox.routing.registerNavigationRoute("/econobel/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
