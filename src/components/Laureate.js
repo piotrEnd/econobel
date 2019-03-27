@@ -79,12 +79,12 @@ const Year = styled.div`
 
 const Laureate = (props) => {
 	const motivation = props.data.laureates[0].motivation;
+	const url = '/economics.json';
 
 	const winners = props.data.laureates.map((winner) => (
 		<div key={winner.id}>
 			<a
-				href={`https://www.nobelprize.org/prizes/economic-sciences/${props.data
-					.year}/${winner.surname}/facts`}
+				href={`${url}${props.data.year}/${winner.surname}/facts`}
 				target="_blank"
 				rel="noopener noreferrer"
 			>

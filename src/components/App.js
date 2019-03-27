@@ -13,7 +13,7 @@ class App extends Component {
 	componentDidMount() {
 		// const url = `http://api.nobelprize.org/v1/prize.json?category=economics`;
 		const url = '/economics.json';
-		fetch(process.env.PUBLIC_URL + url).then((response) => response.json()).then((data) => {
+		fetch(url).then((response) => response.json()).then((data) => {
 			this.setState({
 				laureates: data.prizes,
 				isLoaded: true
