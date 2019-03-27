@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/econobel/precache-manifest.60df43b9cbab2ce55146ada6f45fb639.js"
+  "/econobel/precache-manifest.e0fc425b0b4771f2b0c257e5ac5c7188.js"
 );
 
 workbox.clientsClaim();
