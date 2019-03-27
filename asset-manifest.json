@@ -1,13 +1,13 @@
 {
   "main.css": "/econobel/static/css/main.e0ac5ea8.chunk.css",
-  "main.js": "/econobel/static/js/main.91a9083e.chunk.js",
-  "main.js.map": "/econobel/static/js/main.91a9083e.chunk.js.map",
+  "main.js": "/econobel/static/js/main.b5a1ab20.chunk.js",
+  "main.js.map": "/econobel/static/js/main.b5a1ab20.chunk.js.map",
   "runtime~main.js": "/econobel/static/js/runtime~main.1c518066.js",
   "runtime~main.js.map": "/econobel/static/js/runtime~main.1c518066.js.map",
-  "static/js/2.45b00eae.chunk.js": "/econobel/static/js/2.45b00eae.chunk.js",
-  "static/js/2.45b00eae.chunk.js.map": "/econobel/static/js/2.45b00eae.chunk.js.map",
+  "static/js/2.1168ab61.chunk.js": "/econobel/static/js/2.1168ab61.chunk.js",
+  "static/js/2.1168ab61.chunk.js.map": "/econobel/static/js/2.1168ab61.chunk.js.map",
   "index.html": "/econobel/index.html",
-  "precache-manifest.c7674e8de7196bfd34b024e786c6d624.js": "/econobel/precache-manifest.c7674e8de7196bfd34b024e786c6d624.js",
+  "precache-manifest.0507a8c1d3d24af0403e5ef3491f9f3b.js": "/econobel/precache-manifest.0507a8c1d3d24af0403e5ef3491f9f3b.js",
   "service-worker.js": "/econobel/service-worker.js",
   "static/css/main.e0ac5ea8.chunk.css.map": "/econobel/static/css/main.e0ac5ea8.chunk.css.map"
 }
